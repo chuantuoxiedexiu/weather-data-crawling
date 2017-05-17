@@ -17,7 +17,6 @@ def crawl_weather():
     for each in content:
         city_list.append(each.strip('\n'))
     for i in range(388,len(city_list)):
-        #print '*'*20,i,' / ',len(city_list),city_list[i],'*'*20
         data=[]
         city=city_list[i]
         year=['2011','2012','2013','2014','2015']
