@@ -21,8 +21,6 @@ def crawl_weather():
         city=city_list[i]
         year=['2011','2012','2013','2014','2015']
         month=['01','02','03','04','05','06','07','08','09','10','11','12',]
-        #year=['2011','2012']
-        #month=['01','02']
         failure=0
         for y in year:
             #print y
