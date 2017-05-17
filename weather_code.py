@@ -1,5 +1,4 @@
 #-*-coding:utf-8 -*-
-#rom selenium import webdriver
 from lxml import etree
 import json
 import sys
@@ -17,8 +16,6 @@ def crawl_weather():
     city_list=[]
     for each in content:
         city_list.append(each.strip('\n'))
-    #city_list=['alashan','shanghai','alashan','ordos','beijing']
-    #driver=webdriver.Firefox()
     for i in range(388,len(city_list)):
         #print '*'*20,i,' / ',len(city_list),city_list[i],'*'*20
         data=[]
