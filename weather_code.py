@@ -42,7 +42,6 @@ def crawl_weather():
                         #for d in c:
                         #    print d[0:],
                         #    data[-1].append(d[0:])
-                        #print
                         data.append(c)
                         #print c[0]
                     #print len(a)
