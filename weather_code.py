@@ -28,7 +28,6 @@ def crawl_weather():
         for y in year:
             #print y
             for m in month:
-                #print m
                 if failure==1:
                     continue
                 response=urllib.urlopen('http://lishi.tianqi.com/'+city+'/'+y+m+'.html')
