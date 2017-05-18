@@ -35,10 +35,6 @@ def crawl_weather():
                     print '*'*1,i,' / ',len(city_list),city_list[i], y,m,len(a),'*'*1
                     for b in a[1:]:
                         c=b.xpath('./li//text()')
-                        #print c[0],c[1],c[2],c[3],c[4],c[5]
-                        #for d in c:
-                        #    print d[0:],
-                        #    data[-1].append(d[0:])
                         data.append(c)
                         #print c[0]
                     #print len(a)
