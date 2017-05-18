@@ -36,8 +36,6 @@ def crawl_weather():
                     for b in a[1:]:
                         c=b.xpath('./li//text()')
                         data.append(c)
-                        #print c[0]
-                    #print len(a)
                 else:
                     failure=1
                     continue
