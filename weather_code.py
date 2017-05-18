@@ -23,20 +23,17 @@ def crawl_weather():
         month=['01','02','03','04','05','06','07','08','09','10','11','12',]
         failure=0
         for y in year:
-            #print y
             for m in month:
                 if failure==1:
                     continue
                 response=urllib.urlopen('http://lishi.tianqi.com/'+city+'/'+y+m+'.html')
                 time.sleep(1)
-                #print response.geturl()
                 if len(response.info())!=13:
                     content=response.read()
                     tree=etree.HTML(content)
                     a=tree.xpath('//div[@class="tqtongji2"]/ul')
                     print '*'*1,i,' / ',len(city_list),city_list[i], y,m,len(a),'*'*1
                     for b in a[1:]:
-                        #data.append([])
                         c=b.xpath('./li//text()')
                         #print c[0],c[1],c[2],c[3],c[4],c[5]
                         #for d in c:
