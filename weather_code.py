@@ -2,7 +2,7 @@
 from lxml import etree
 import json
 import sys
-
+import time
 import urllib
 from selenium import webdriver
 import re
