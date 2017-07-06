@@ -1,6 +1,6 @@
 #-*-coding:utf-8 -*-
 from lxml import etree
-import json
+
 import sys
 import time
 import urllib
