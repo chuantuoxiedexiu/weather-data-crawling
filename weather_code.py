@@ -4,7 +4,6 @@ import json
 import sys
 import time
 import urllib
-
 import re
 from selenium import webdriver
 reload(sys)
