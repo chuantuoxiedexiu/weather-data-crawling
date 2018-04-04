@@ -4,9 +4,9 @@ import json
 import sys
 import time
 import urllib
-from selenium import webdriver
-import re
 
+import re
+from selenium import webdriver
 reload(sys)
 sys.setdefaultencoding('utf8')
 def crawl_weather():
