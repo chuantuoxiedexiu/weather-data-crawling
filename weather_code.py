@@ -6,7 +6,6 @@ import time
 import urllib
 from selenium import webdriver
 import re
-
 reload(sys)
 sys.setdefaultencoding('utf8')
 def crawl_weather():
