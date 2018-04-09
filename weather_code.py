@@ -9,6 +9,7 @@ from selenium import webdriver
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+
 def crawl_weather():
     f=open('.\\city_with_checkin.txt','r')
     content=f.readlines()
